@@ -18,6 +18,9 @@ app.get('/', (req, res) => {
 // Auth routes
 app.use('/api', require('./routes/auth'));
 
+// Admin routes
+app.use('/api/admin', require('./routes/admin'));
+
 // Start server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
